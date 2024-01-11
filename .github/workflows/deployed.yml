@@ -45,7 +45,7 @@ jobs:
    runs-on: [Linux]
    steps:
       - name: docker pull image
-        run: docker pull /tic-tac-toe:latest
+        run: docker pull deepakprasad/tic-tac-toe:latest
 
       - name: Image scan
         run: trivy image deepakprasad/tic-tac-toe:latest > trivyimagedeploy.txt  
